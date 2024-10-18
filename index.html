@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>portfolio</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1>EditKaro.in Portfolio</h1>
+
+        <div class="container">
+            <a href="#" id="home-link">Home</a>
+            <a href="#" id="aboutus-link">About Us</a>
+            <a href="#" id="services-link">Services</a>
+            <a href="#" id="portfolio-link">Portfolio</a>
+            <a href="#" id="contact-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-text">
+            <h2 class="welcome-animation">Welcome!</h2>
+            <h1>We specialize in social media <br />marketing and expert <br />video<span> editing</span></h1>
+
+        </div>
+        <div class="home-img">
+            <img src="edit3.jpg" alt="">
+
+    </section>
+
+    <!-- About Us Section -->
+    <section id="aboutus">
+        <div class="about">
+            <h2>About Us</h2>
+            <p><h4> Editkaro.in is a premier agency focused on social media marketing and video editing, offering expertise in a diverse array of video content creation. Our services range from short-form and long-form videos to gaming edits, football highlights, eCommerce advertisements, documentaries, color grading, anime productions, and promotional videos. Our talented team transforms your ideas into reality with artistic accuracy.
+                We are dedicated to delivering high-quality video editing solutions that enable businesses and individuals to convey their messages effectively across digital channels</h4>
+           
+        </div>
+        
+    </section>
+    
+    
+    
+    <!-- Services Section -->
+    <section id="services">
+        <div class="ser"><p>our Serivices</p></div>
+         <div class="service-item">
+        <img src="images.jpeg" alt="Video Editing Icon">
+            <h2>Video Editing</h2>
+            <h4>High-quality video editing services tailored to your creative and marketing needs.</h4>
+        </div>
+
+        <div class="service-item">
+            <img src="image1.jpg" alt="Social Media Marketing Icon">
+            <h2>Social Media Marketing</h2>
+            <h4>Boost your brand’s online presence with engaging social media strategies.</h4>
+        </div>
+
+
+        <div class="service-item">
+            <img src="image2.jpg" alt="Color Grading Icon">
+            <h2>Color Grading</h2>
+            <h4>Enhance the visual impact of your videos with professional color grading.</h4>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="portfolios">
+            <h2>Our Portfolio</h2>
+            <div class="main-content">
+                <div class="filter-container">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="short-form">Short-form Videos</button>
+                    <button class="filter-btn" data-category="long-form">Long-form Videos</button>
+                    <button class="filter-btn" data-category="gaming">Gaming Videos</button>
+                    <button class="filter-btn" data-category="football">Football Edits</button>
+                    <button class="filter-btn" data-category="ecommerce">eCommerce Ads</button>
+                    <button class="filter-btn" data-category="documentary">Documentary Style</button>
+                    <button class="filter-btn" data-category="color-grading">Color Grading</button>
+                    <button class="filter-btn" data-category="anime">Anime Videos</button>
+                <button class="filter-btn" data-category="ads">Ads</button>
+            </div>
+            <div class="portfolio-container">
+                <div class="portfolio-item" data-category="short-form">
+                    <iframe src="short.mp4" ></iframe>
+                    <p>Short-form videos are quick, engaging pieces of content tailored for rapid consumption.</p>
+        </div>
+        <div class="portfolio-item" data-category="long-form">
+            <iframe src="long .mp4" ></iframe>
+            <p>Long-form videos provide in-depth storytelling and detailed content, perfect for platforms like YouTube. </p>
+        </div>
+        <div class="portfolio-item" data-category="gaming">
+            <iframe src="game.mp4" ></iframe>
+            <p>Gaming videos are designed to showcase gameplay, strategies, and highlights.</p>
+        </div>
+        <div class="portfolio-item" data-category="football">
+            <iframe src="foot.mp4" ></iframe>
+            <p>Football edits highlight the best moments, skills, and excitement of the game. </p>
+        </div>
+        <div class="portfolio-item" data-category="ecommerce">
+            <iframe src="ecom.mp4" ></iframe>
+            <p>eCommerce ads are crafted to highlight products and drive sales. 
+    These ads are optimized for platforms like Instagram, Facebook, and Google Ads.</p>
+        </div>
+        <div class="portfolio-item" data-category="documentary">
+            <iframe src="doc.mp4" ></iframe>
+            <p>Documentary-style videos focus on telling real-life stories with depth and emotion.</p>
+        </div>
+        <div class="portfolio-item" data-category="color-grading">
+            <iframe src="color.mp4" ></iframe>
+            <p>Color grading is an essential part of enhancing the mood and tone of videos. </p>
+        </div>
+        <div class="portfolio-item" data-category="anime">
+            <iframe src="ANIMATIONS.mp4" ></iframe>
+            <p>Anime video editing requires precision and creativity to match the unique style of animation.</p>
+        </div>
+        <div class="portfolio-item" data-category="ads">
+            <iframe src="ads.mp4" ></iframe>
+            <p>Effective ad video editing is crucial for grabbing attention within seconds.</p>
+        </div>
+     </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="text">
+            <h2>Contact Us</h2>
+            <form method="post"action="https://script.google.com/macros/s/AKfycby2gsvkOLzKjm0T7c1ImDLNmtbBu6TBtHXVIS0XXM7XMbJ6T-cb_CBLPagjtyf78plBYQ/exec" name="contactform">
+                <input type="text" name="name" placeholder="name"><br><br>
+                <input type="email" name="email" placeholder="Email"><br><br>
+                <input type="tel" name="phone" placeholder="phone"><br><br>
+                <input type="submit" value="submit" id="submit">
+    
+            </form>
+        </div>
+    </div>
+    </section>
+    <section class="footers">
+        <footer class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h2>Editkaro.in</h2>
+                    <p>We specialize in social media marketing and video editing services, including short-form videos, long-form videos, gaming videos, football edits, eCommerce ads, documentary style, color grading, anime videos, and ads.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Short-form Videos</a></li>
+                        <li><a href="#">Long-form Videos</a></li>
+                        <li><a href="#">Gaming Videos</a></li>
+                        <li><a href="#">E-commerce Ads</a></li>
+                        <li><a href="#">Documentaries</a></li>
+                        <li><a href="#">Color Grading</a></li>
+                        <li><a href="#">Anime Videos</a></li>
+                        <li><a href="#">Ads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <ul class="social-links">
+                         <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Editkaro.in - All Rights Reserved</p>
+            </div>
+        </footer>
+        </section>
+        <script src="script.js"></script>
+    </body>
+    </html>

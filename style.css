@@ -1,0 +1,380 @@
+/* Basic CSS for layout and styling */
+body {
+    font-family: "Poppins", system-ui;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #f54744;
+    background-color: #fff4f3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.container a {
+    text-decoration: none;
+    color: #f54744;
+    font-size: 15px;
+    padding: 10px 30px;
+}
+
+.container a:hover {
+    color: black;
+}
+
+/* Section styling */
+section {
+    padding: 50px 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home {
+    width: 100%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background: #fff4f3;
+    gap: 1.5rem;
+}
+.home-img img{
+    width:80%;
+    margin-top:80px;
+    margin-left: 50px;
+    
+
+}
+.home-text {
+    margin: 50px;
+    font-size: 25px;
+}
+
+.welcome-animation {
+    font-size: 3em;
+    font-weight: bold;
+    color: #f54744;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(30, end) infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.home-text h1{
+    font-size: 2rem;
+    color: black;
+}
+.home-text span{
+    color:#f54744;
+
+}
+
+#aboutus {
+    background-color: #f0f0f0;
+    
+}
+.about{
+    text-align: center;
+}
+.about h2{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color:#f54744;
+}
+.about{
+    text-align: center; 
+    margin: 0 auto; 
+    padding: 20px; 
+    max-width: 600px;
+}
+
+h2 { 
+    text-align: center; 
+}
+
+
+
+#services {
+    background-color: #fff4f3;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.service-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.service-item img {
+    max-width: 100px;
+    margin-bottom: 20px;
+
+}
+
+.ser p{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color:#f54744;
+}
+.service-item h2{
+color:#f54744;
+}
+
+
+
+
+#portfolios {
+    background-color: #f0f0f0;
+}
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.filter-btn:hover {
+    background-color: #0056b3;
+}
+
+.filter-btn.active {
+    background-color: #0056b3;
+}
+
+
+.portfolio-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+
+}
+
+.portfolio-item video {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item p {
+    margin-top: 10px;
+}
+
+
+/* Ensure the background image doesn't affect the rest of the layout */
+
+
+.portfolio-item {
+    position: relative;
+    margin: 20px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff; 
+    transition: transform 0.3s ease;
+}
+
+
+.portfolio-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Color animation around video */
+.portfolio-item::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(45deg,#f54744,blueviolet);
+    background-size: 300%;
+z-index: -1;
+border-radius: 12px;
+    filter: blur(8px);
+    animation: animateBorder 5s linear infinite; /* Animation for moving colors */
+}
+.portfolio-item {
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the item on hover */
+    border: 2px solid #007BFF; /* Add border color on hover */
+}
+
+
+
+
+#contact {
+    background-color: #fff4f3;
+}
+.text{
+    width:400px;
+    padding:30px;
+    border:5px solid #f54744;
+    border-radius: 10px;
+    margin-top:30px;
+    
+    
+}
+.text h3{
+    margin-top: 10px;
+    font-size: 24px;
+    color:#f54744
+}
+input{
+    width:95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border:1px solid #f54744;
+
+}
+
+#submit{
+    border: none;
+    background-color:#f54744;
+    color: white;
+    width:200px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: large;
+}
+#submit:hover{
+  
+    background-color: blueviolet;
+}
+
+
+h1, h2 {
+    color: #f54744;
+}
+.about {
+    background-color: #333;
+    color:#f54744;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top:50px;
+    
+}
+.footer-container {
+    background-color: #333;
+    color:#f54744;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top:50px;
+    
+}
+.footer-container p{
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+.footer-section h2, .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #ff4500;
+}
+
+.social-links {
+    .social-links {
+        display: flex;
+        gap: 15px;
+    }
+}
+    
+    .footer-bottom {
+        background-color: #222;
+        padding: 10px;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 12px;
+        color: #aaa;
+    }
+    
+    @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px;
+        }
+    }
+    
+        .footer-section {
+            text-align: center;
+            margin-bottom: 20px;
+                }
